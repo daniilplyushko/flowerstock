@@ -4,39 +4,40 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/normilize.css" rel="stylesheet">
+    <title>FlowerStock - MayFlower</title>
+    <link href="resources/css/normalize.css" rel="stylesheet">
+    <link href="resources/css/bootstrap.css" rel="stylesheet">
+    <link href="resources/css/flowerstock.css" rel="stylesheet">
   </head>
   <body>
-  <div class="container parent">
-      <div class="row block1">
+  <div class="container">
+      <div class="row">
+          <div class="col-xs-6 col-md-4 col-xs-offset-3 col-md-offset-4">
+            <div class="flowerstock_indexlogo"></div>
             <form>
               <div class="form-group">
-               <label for="email">Email</label>
+               <label for="email">Электропочта</label>
                 <div class="input-group">
-                  <input type="text" class="form-control" id="email" placeholder="Email">
+                  <input type="text" class="form-control" name="user_email">
                   <div class="input-group-addon">@fastvps.ee</div>
                   </div>
                 </div>
               <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" class="form-control" id="password" placeholder="Password">
+                <label for="password">Пароль</label>
+                <input type="password" class="form-control" name="user_password">
               </div>
               <div>
-              <button type="button" class="btn btn-default">Войти</button>
-              <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modal2">Восстановление пароля</button>
+              <button type="button" class="btn btn-primary">Войти</button>
+              <button type="button" class="btn btn-link" data-toggle="modal" data-target="#ModalUserReset">Восстановление пароля</button>
               </div>
             </form>
             <hr>
-            <div align='center'>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">Регистрация</button>     
-          </div>
+              <p class="text-center"><button type="button" class="btn btn-default" data-toggle="modal" data-target="#ModalURegistration">Регистрация</button></p>
+              <p class="text-muted text-center">Чтобы зарегистрироваться Вам потребуется<br/>почтовый аккаунт в домене fastvps.ee.</p>
+            </div>
       </div>
     </div>
-   <div class="modal fade" id="modal1">
+   <div class="modal fade" id="ModalURegistration">
        <div class="modal-dialog">
            <div class="modal-content">
                <div class="modal-header">
@@ -76,8 +77,8 @@
            </div>
        </div>
    </div>
-                          </div>
-      <div class="modal fade" id="modal2">
+</div>
+      <div class="modal fade" id="ModalUserReset">
        <div class="modal-dialog">
            <div class="modal-content">
                <div class="modal-header">
