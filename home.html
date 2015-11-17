@@ -1,75 +1,93 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>FlowerStock - MayFlower</title>
-    <link href="resources/css/normalize.css" rel="stylesheet">
-    <link href="resources/css/bootstrap.css" rel="stylesheet">
-    <link href="resources/css/flowerstock.css" rel="stylesheet">
-    </head>
-  <body>
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">
-            <img alt="logo" src="resources/img/logo/F_logo_flowerstock_home.png">
-          </a>
-            <form class="navbar-form navbar-left" role="search">
-              <div class="form-group">
-			<input type="text" name="search_phrase" class="form-control" autocomplete="off" placeholder="Введите ключевое слово для поиска..." autofocus="autofocus">
-			</div>
-            </form>
-            <ul class="nav navbar-nav navbar-right">
-			<li><a href="#" data-toggle="modal" data-target="#ModalMe"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;Victor Litvinkov</a></li>
-			<li class="hidden-xs"><a href="/Users/Exit/"><span class="glyphicon glyphicon-off"></span></a></li>
-		</ul>
-        </div>
-      </div>
-    </nav>
-    <div class="container-fluid search"><div class="row" id="search_intro">
-	<div class="hidden-xs col-sm-2 col-md-2 col-lg-2 text-right"><img src="resources/img/logo/blue_arrow_up.png"></div>
-	<div class="hidden-xs col-sm-9 col-md-8 col-lg-8">
-		<h4>Воспользуйтесь поиском, чтобы начать повседневную работу.</h4>
-		<p>Чтобы искать категории или товары на Складе, просто введите код или наименование интересующего Вас товара или категории.</p><p>Чтобы искать заказы, введите <kbd>#</kbd> и код искомого заказа без пробелов.</p><p>Чтобы искать предприятие или пользователя, введите наименование предприятия или его регистрационный код. Чтобы искать пользователя, введите в поисковую строку имя и фамилию клиента или его адрес электронной почты.</p><p>Нажмите <kbd>Esc</kbd>, чтобы завершить поиск.</p>	</div>
+<!DOCTYPE html><html lang="en">
+<head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><title>FlowerStock - MayFlower</title><link href="resources/css/normalize.css" rel="stylesheet"><link href="resources/css/bootstrap.css" rel="stylesheet"><link href="resources/css/flowerstock.css" rel="stylesheet"></head>
+<body>
+<nav class="navbar navbar-default"><div class="container-fluid"><div class="navbar-header"><a class="navbar-brand" href="#"><img alt="logo" src="resources/img/logo/F_logo_flowerstock_home.png"></a>
+<ul class="nav navbar-nav navbar-right">
+  <li><a href="#" data-toggle="modal" data-target="#ModalMe"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;Victor Litvinkov</a></li>
+  <li class="hidden-xs"><a href="/Users/Exit/"><span class="glyphicon glyphicon-off"></span></a></li>
+</ul>
+</div></div></nav>
+<div class="row">
+  <div class="col-md-10 col-md-offset-1">
+    <div class="panel panel-info store_panel"><div class="panel-heading clearfix"><h4 class="panel-title pull-left" style="padding-top: 7.5px; padding-right:10px;">Склад</h4>
+    <form class="form-inline" name="warehouse_search"><div class="form-group"><div class="input-group"><input type="search" class="form-control" placeholder="Введите серийный номер или код модели" name="warehouse_search_phrase"><div class="input-group-addon"><span class="glyphicon glyphicon-barcode" aria-hidden="true"></span></div></div></div></form>
+  </div>
+  <div class="panel-body">
+    <div class="panel-preloader">
+        
+    </div>
+  </div>
+  <table class="table">
+    <thead>
+      <tr>
+      <th colspan="5">Последние действия:</th>
+      </tr>
+      <tr>
+      <th>Дата, время</th>
+      <th colspan="2">Название товара<br/>Серийный номер</th>
+      <th>Month</th>
+      <th>Savings</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+      <td>January</td>
+      <td>January</td>
+      <td>January</td>
+      <td>January</td>
+      <td>$100</td>
+      </tr>
+      <tr>
+      <td>February</td>
+      <td>February</td>
+      <td>February</td>
+      <td>February</td>
+      <td>$80</td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="table">
+    <thead>
+      <tr>
+      <th colspan="5">Результаты поиска:</th>
+      </tr>
+      <tr>
+      <th>Дата, время</th>
+      <th>Month</th>
+      <th>Month</th>
+      <th>Month</th>
+      <th>Savings</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+      <td>21.11.2015<br/>17:30</td>
+      <td>January</td>
+      <td>January</td>
+      <td>January</td>
+      <td>$100</td>
+      </tr>
+      <tr>
+      <td>February</td>
+      <td>February</td>
+      <td>February</td>
+      <td>February</td>
+      <td>$80</td>
+      </tr>
+    </tbody>
+  </table>
+</div></div></div>
+<div class="row"><div class="col-md-5 col-md-offset-1">
+  <div class="panel panel-default "><div class="panel-heading"><h4 class="panel-title pull-left" style="padding-top: 7.5px; padding-right:10px;">Тестовый стол</h3></div>
+  <div class="panel-body">
+
+  </div></div>
+</div>
+<div class="col-md-5">
+  <div class="panel panel-default"><div class="panel-heading"><h4 class="panel-title pull-left" style="padding-top: 7.5px; padding-right:10px;">Запланированные работы</h3></div>
+  <div class="panel-body">
+
+  </div></div>
 </div></div>
-   <div class="row">
-       <div class="col-md-10 col-md-offset-1">
-            <div class="panel panel-info">
-              <div class="panel-heading">
-                <h3 class="panel-title">Склад</h3>
-                
-              </div>
-              <div class="panel-body">
-                
-              </div>
-            </div>
-       </div>
-       </div>
-       <div class="row">
-       <div class="col-md-5 col-md-offset-1">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h3 class="panel-title">Тестовый стол</h3>
-              </div>
-              <div class="panel-body">
-                
-              </div>
-            </div>
-       </div>
-       <div class="col-md-5">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h3 class="panel-title">Запланированная работа</h3>
-              </div>
-              <div class="panel-body">
-                
-              </div>
-            </div>
-       </div>
-       </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-  </body>
-</html>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script><script src="js/bootstrap.js"></script></html>
