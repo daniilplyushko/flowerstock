@@ -1,109 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>FlowerStock - MayFlower</title>
-    <link href="resources/css/normalize.css" rel="stylesheet">
-    <link href="resources/css/bootstrap.css" rel="stylesheet">
-    <link href="resources/css/flowerstock.css" rel="stylesheet">
-  </head>
-  <body>
-  <div class="container">
-      <div class="row">
-          <div class="col-xs-6 col-md-4 col-xs-offset-3 col-md-offset-4">
-            <div class="flowerstock_indexlogo"></div>
-            <form>
-              <div class="form-group">
-               <label for="email">Электропочта</label>
-                <div class="input-group">
-                  <input type="text" class="form-control" name="user_email">
-                  <div class="input-group-addon">@fastvps.ee</div>
-                  </div>
-                </div>
-              <div class="form-group">
-                <label for="password">Пароль</label>
-                <input type="password" class="form-control" name="user_password">
-              </div>
-              <div>
-              <button type="button" class="btn btn-primary">Войти</button>
-              <button type="button" class="btn btn-link" data-toggle="modal" data-target="#ModalUserReset">Восстановление пароля</button>
-              </div>
-            </form>
-            <hr>
-              <p class="text-center"><button type="button" class="btn btn-default" data-toggle="modal" data-target="#ModalUserRegistration">Регистрация</button></p>
-              <p class="text-muted text-center">Чтобы зарегистрироваться Вам потребуется<br/>почтовый аккаунт в домене fastvps.ee.</p>
-            </div>
+<!DOCTYPE html><html lang="en">
+<head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><title>FlowerStock - MayFlower</title><link href="resources/css/normalize.css" rel="stylesheet"><link href="resources/css/bootstrap.css" rel="stylesheet"><link href="resources/css/flowerstock.css" rel="stylesheet"></head>
+<body>
+<div class="container"><div class="row"><div class="col-xs-6 col-md-4 col-xs-offset-3 col-md-offset-4"><div class="flowerstock_indexlogo"></div>
+<form>
+  <div class="form-group"><label for="email">Электропочта</label><div class="input-group"><input type="text" class="form-control" name="user_email" required><div class="input-group-addon">@fastvps.ee</div></div></div>
+  <div class="form-group"><label for="password">Пароль</label><input type="password" class="form-control" name="user_password" required></div>
+  <div><button type="submit" class="btn btn-primary">Войти</button>&nbsp;<a href="#" class="btn btn-link" data-toggle="modal" data-target="#ModalUserReset">Восстановление пароля</a></div>
+</form>
+<hr>
+<p class="text-center"><a href="#" class="btn btn-default" data-toggle="modal" data-target="#ModalUserRegistration">Регистрация</a></p>
+<p class="text-muted text-center">Чтобы зарегистрироваться Вам потребуется<br/>почтовый аккаунт в домене fastvps.ee.</p>
+</div></div></div>
+<!-- == MODALS ==-->
+<div class="modal" id="ModalUserRegistration"><div class="modal-dialog modal-lg"><div class="modal-content">
+  <div class="modal-header"><button class="close" type="button" data-dismiss="modal">&times;</button><h4 class="modal-title">Регистрация пользователя</h4></div>
+  <form>
+  <div class="modal-body"><div class="row">
+    <div class="col-md-4"><p>Чтобы зарегистрироваться необходим почтовый аккаунт в домене fastvps.ee.</p><p>По завершении регистрации необходимо дождаться активации аккаунта. Аккаунт активирует Ваш руководитель.</p><p>Сразу после активации пароль для доступа к Вашему аккунту будет отправлен на указанный адрес.</p></div>
+    <div class="col-md-8">
+        <div class="form-group"><label for="user_firstname">Имя</label><div class="row"><div class="col-sm-4"><input type="text" class="form-control" name="user_firstname" required></div></div></div>
+        <div class="form-group"><label for="user_surname">Фамилия</label><div class="row"><div class="col-sm-6"><input type="text" class="form-control" name="user_surname" required></div></div></div>
+        <div class="form-group"><label for="user_email">Электропочта</label><div class="row"><div class="col-sm-8"><input type="email" class="form-control" name="user_email" placeholder="username@fastvps.ee" required></div></div></div>
+    </div>
+  </div>
+  <div class="row"><div class="col-md-12"><hr></div></div>
+  <div class="row">
+    <div class="col-md-4"><p>Для регистрации необходим код приглашения. Код Вы сможете получить у своего непосредственного руководителя.</p></div>
+    <div class="col-md-8">
+        <div class="form-group form-group-lg"><label for="user_invitecode">Код приглашения</label><div class="row"><div class="col-sm-6"><input type="text" class="form-control" name="user_invitecode" required></div></div></div>
+    </div>
+  </div></div>
+  <div class="modal-footer">
+    <div class="row">
+      <div class="col-md-offset-4 col-md-8">
+          <button type="submit" class="btn btn-primary">Отправить</button>
       </div>
     </div>
-   <div class="modal fade" id="ModalUserRegistration">
-       <div class="modal-dialog">
-           <div class="modal-content">
-               <div class="modal-header">
-                  <button class="close" type="button" data-dismiss="modal">
-                       &times;
-                   </button>
-                   <h4 class="modal-title">Регистрация пользователя</h4>
-               </div>
-               <div class="modal-body">
-                        <div class="row">
-                          <div class="col-md-6">
-                          <p>Чтобы зарегистрироваться необходим почтовый аккаунт в домене fastvps.ee.</p>
-                          </div>
-                          <div class="col-md-6">
-                           <div class="block3">
-                            <form>
-                              <div class="form-group">
-                                <label for="first_name">First name</label>
-                                <input type="first_name" class="form-control" id="first_name" placeholder="First name">
-                              </div>
-                              <div class="form-group">
-                                <label for="surname">Surname</label>
-                                <input type="surname" class="form-control" id="surname" placeholder="Surname">
-                              </div>
-                              <div class="form-group">
-                                <label for="email2">Email</label>
-                                <input type="email2" class="form-control" id="email2" placeholder="Email">
-                              </div>
-                            </form>
-                          </div>
-                        </div>
-                </div>
-               <div class="modal-footer">
-                   <button type="button" class="btn btn-default">Зарегистрироваться</button>
-                   <button class="btn btn-danger" type="button" data-dismiss="modal">Отмена</button>
-               </div>
-           </div>
-       </div>
-   </div>
-</div>
-      <div class="modal fade" id="ModalUserReset">
-       <div class="modal-dialog">
-           <div class="modal-content">
-               <div class="modal-header">
-                  <button class="close" type="button" data-dismiss="modal">
-                       &times;
-                   </button>
-                   <h4 class="modal-title">Восстановление пароля</h4>
-               </div>
-               <div class="modal-body">
-                  <form>
-                   <div class="form-group">
-                        <label for="email3">Email</label>
-                        <input type="email3" class="form-control" id="email3" placeholder="Email">
-                    </div>
-                    <p><i>Для восстановления пароля введите Email</i></p>
-                  </form>
-               <div class="modal-footer">
-                   <button type="button" class="btn btn-default">Отправить</button>
-                   <button class="btn btn-danger" type="button" data-dismiss="modal">Отмена</button>
-               </div>
-           </div>
-       </div>
-   </div>
-      </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="resources/js/bootstrap.js"></script>
-  </body>
-</html>
+  </div>
+  </form>
+</div></div></div>
+
+<div class="modal" id="ModalUserReset"><div class="modal-dialog"><div class="modal-content">
+  <div class="modal-header"><button class="close" type="button" data-dismiss="modal">&times;</button><h4 class="modal-title">Восстановление пароля</h4></div>
+  <form>
+  <div class="modal-body">
+    <div class="form-group"><label for="user_email">Электропочта</label><input type="email" class="form-control" name="user_email" placeholder="username@fastvps.ee" required><p class="help-block">Новый пароль будет отправлен на указанный адрес.</p></div>
+  </div>
+  <div class="modal-footer">
+    <button type="submit" class="btn btn-primary">Отправить</button>
+  </div>
+  </form>
+</div></div></div>
+<!-- =/= MODALS ==-->
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script><script src="resources/js/bootstrap.js"></script></html>

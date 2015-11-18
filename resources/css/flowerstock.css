@@ -1,4 +1,6 @@
-
+/* Bootstrap styles overwrite */
+.modal-footer{text-align:left!important}
+/* Flowerstock Styles */
 .flowerstock_indexlogo{display: block; clear: both; height: 140px; background: url('../img/logo/F_logo_flowerstock_index.png') center center no-repeat;}
 .navbar-header{width: 100%;}
 div.store_panel form[name="warehouse_search"] input[name="warehouse_search_phrase"] {width:350px!important;}
