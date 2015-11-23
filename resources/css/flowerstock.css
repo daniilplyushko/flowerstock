@@ -4,8 +4,15 @@
 .flowerstock_indexlogo{display: block; clear: both; height: 140px; background: url('../img/logo/F_logo_flowerstock_index.png') center center no-repeat;}
 .navbar-header{width: 100%;}
 div.store_panel form[name="warehouse_search"] input[name="warehouse_search_phrase"] {width:350px!important;}
-<<<<<<< HEAD
 div.panel-preloader{background: url(../img/preloaders.gif)center center no-repeat; width: 100%; height: 300px;}
-=======
-div.panel-preloader{}
->>>>>>> origin/master
+/* Icons */
+.icons{padding: 0px 0px 0px 15px!important;}
+.serial-number{background-color: aqua;}
+.ram{background: url(../img/icons/ram.png)center center no-repeat;height: 26px; width: 26px;}
+.hdd{background: url(../img/icons/hdd.png)center center no-repeat;height: 26px; width: 26px;}
+.ssd{background: url(../img/icons/ssd.png)center center no-repeat;height: 26px; width: 26px;}
+.network-card{background: url(../img/icons/network_card.png)center center no-repeat;height: 26px; width: 26px;}
+.monitor{background: url(../img/icons/monitor.png)center center no-repeat;height: 26px; width: 26px;}
+.server{background: url(../img/icons/Server.png)center center no-repeat;height: 26px; width: 26px;}
+
+
